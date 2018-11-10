@@ -1,0 +1,6 @@
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouse\bin\Debug\ProductionHouse.exe.config
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouse\bin\Debug\ProductionHouse.exe
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouse\bin\Debug\ProductionHouse.pdb
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouse\obj\Debug\ProductionHouse.csproj.CoreCompileInputs.cache
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouse\obj\Debug\ProductionHouse.exe
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouse\obj\Debug\ProductionHouse.pdb

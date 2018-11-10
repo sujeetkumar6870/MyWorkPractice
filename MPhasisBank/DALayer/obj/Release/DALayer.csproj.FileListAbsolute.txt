@@ -1,0 +1,13 @@
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\DALayer.dll.config
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\DALayer.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\DALayer.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\BusinessEntities.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\EntityFramework.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\EntityFramework.SqlServer.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\BusinessEntities.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\EntityFramework.xml
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\bin\Release\EntityFramework.SqlServer.xml
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\obj\Release\DALayer.csprojResolveAssemblyReference.cache
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\obj\Release\DALayer.csproj.CoreCompileInputs.cache
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\obj\Release\DALayer.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\DALayer\obj\Release\DALayer.pdb

@@ -1,0 +1,14 @@
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\DALayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\DALayer.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\DALayer.dll.config
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessLayer\obj\Debug\BusinessLayer.pdb

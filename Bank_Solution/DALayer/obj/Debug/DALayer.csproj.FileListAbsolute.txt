@@ -1,0 +1,14 @@
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\DALayer.dll.config
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\DALayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\DALayer.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\EntityFramework.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\BusinessEntities.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\EntityFramework.xml
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\obj\Debug\DALayer.csprojAssemblyReference.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\obj\Debug\DALayer.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\obj\Debug\DALayer.csproj.CopyComplete
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\obj\Debug\DALayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\DALayer\obj\Debug\DALayer.pdb

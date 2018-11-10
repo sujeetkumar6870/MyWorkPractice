@@ -1,0 +1,17 @@
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\CorpBank.exe.config
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\CorpBank.exe
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\CorpBank.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\BusinessLayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\DALayer.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\EntityFramework.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\BusinessLayer.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\DALayer.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\DALayer.dll.config
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\BusinessEntities.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\bin\Debug\EntityFramework.xml
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\obj\Debug\CorpBank.csprojAssemblyReference.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\obj\Debug\CorpBank.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\obj\Debug\CorpBank.csproj.CopyComplete
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\obj\Debug\CorpBank.exe
+C:\Users\kumasuje\source\repos\Bank_Solution\CorpBank\obj\Debug\CorpBank.pdb

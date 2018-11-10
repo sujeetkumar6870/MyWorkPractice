@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="MPhasisBankEntities-Web.config Connection String" description="MPhasisBankEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/MPhasisBankModel.csdl|res://*/MPhasisBankModel.ssdl|res://*/MPhasisBankModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=LTPMAN022351506\SQLEXPRESS;initial catalog=MPhasisBank;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\DotNetPractice\\Sujeet_Project\\MPhasisBank\\MPhasisBankUI\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MPhasisBankEntities']/@connectionString" />
+  </parameter>
+</parameters>

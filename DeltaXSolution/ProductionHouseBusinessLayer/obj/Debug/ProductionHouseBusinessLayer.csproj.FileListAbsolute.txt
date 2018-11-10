@@ -1,0 +1,5 @@
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouseBusinessLayer\bin\Debug\ProductionHouseBusinessLayer.dll
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouseBusinessLayer\bin\Debug\ProductionHouseBusinessLayer.pdb
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouseBusinessLayer\obj\Debug\ProductionHouseBusinessLayer.csproj.CoreCompileInputs.cache
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouseBusinessLayer\obj\Debug\ProductionHouseBusinessLayer.dll
+c:\users\kumasuje\source\repos\DeltaXSolution\ProductionHouseBusinessLayer\obj\Debug\ProductionHouseBusinessLayer.pdb

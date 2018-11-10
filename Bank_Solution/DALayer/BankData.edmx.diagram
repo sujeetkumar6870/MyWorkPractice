@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="79daf7c6742a4ba5a3006a4c3a8f9636" Name="Diagram1">
+        <EntityTypeShape EntityType="MPhasisBankModel.AccountsEntity" Width="1.5" PointX="3.125" PointY="0.5" IsExpanded="true" FillColor="Fuchsia" />
+        <EntityTypeShape EntityType="MPhasisBankModel.CustomerEntity" Width="1.5" PointX="1.125" PointY="0.5" IsExpanded="true" FillColor="Fuchsia" />
+        <EntityTypeShape EntityType="MPhasisBankModel.DepartmentEntity" Width="1.5" PointX="6.875" PointY="0.5" IsExpanded="true" FillColor="Fuchsia" />
+        <EntityTypeShape EntityType="MPhasisBankModel.EmployeeEntity" Width="1.5" PointX="8.875" PointY="0.5" IsExpanded="true" FillColor="Fuchsia" />
+        <EntityTypeShape EntityType="MPhasisBankModel.SavingsEntity" Width="1.5" PointX="5" PointY="0.5" IsExpanded="true" FillColor="Fuchsia" />
+        <EntityTypeShape EntityType="MPhasisBankModel.SavingTransactionsEntity" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" FillColor="Fuchsia" />
+        <AssociationConnector Association="MPhasisBankModel.fk_accid" ManuallyRouted="false" />
+        <AssociationConnector Association="MPhasisBankModel.fk_custid" ManuallyRouted="false" />
+        <AssociationConnector Association="MPhasisBankModel.fk_sbAccid" ManuallyRouted="false" />
+        <AssociationConnector Association="MPhasisBankModel.fk_sbCustid" ManuallyRouted="false" />
+        <AssociationConnector Association="MPhasisBankModel.fk_deptid" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MPhasisBankModel.LoanEntity" Width="1.5" PointX="1.125" PointY="3.75" FillColor="Fuchsia" />
+        <EntityTypeShape EntityType="MPhasisBankModel.LoanTransactionsEntity" Width="1.5" PointX="7.25" PointY="2.25" FillColor="Fuchsia" />
+        <AssociationConnector Association="MPhasisBankModel.fk_LnAccid" />
+        <AssociationConnector Association="MPhasisBankModel.fk_lntraccid" />
+        <AssociationConnector Association="MPhasisBankModel.fk_LnCustid" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

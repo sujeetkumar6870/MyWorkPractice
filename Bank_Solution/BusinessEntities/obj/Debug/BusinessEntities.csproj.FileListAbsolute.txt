@@ -1,0 +1,5 @@
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\Bank_Solution\BusinessEntities\obj\Debug\BusinessEntities.pdb

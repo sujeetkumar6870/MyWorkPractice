@@ -1,0 +1,13 @@
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\BusinessLayer.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\BusinessLayer.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\BusinessEntities.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\DALayer.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\EntityFramework.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\BusinessEntities.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\DALayer.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\DALayer.dll.config
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\bin\Release\EntityFramework.xml
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\obj\Release\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\obj\Release\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\obj\Release\BusinessLayer.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessLayer\obj\Release\BusinessLayer.pdb

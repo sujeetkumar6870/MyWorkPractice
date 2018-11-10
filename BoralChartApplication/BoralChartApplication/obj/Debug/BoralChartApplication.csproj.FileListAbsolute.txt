@@ -1,0 +1,10 @@
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\bin\Debug\BoralChartApplication.exe.config
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\bin\Debug\BoralChartApplication.exe
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\bin\Debug\BoralChartApplication.pdb
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.csprojAssemblyReference.cache
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.Properties.Resources.resources
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.csproj.GenerateResource.cache
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.exe
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.pdb
+C:\Users\kumasuje\source\repos\BoralChartApplication\BoralChartApplication\obj\Debug\BoralChartApplication.MainForm.resources

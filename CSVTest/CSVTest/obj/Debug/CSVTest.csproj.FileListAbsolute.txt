@@ -1,0 +1,7 @@
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\bin\Debug\CSVTest.exe.config
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\bin\Debug\CSVTest.exe
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\bin\Debug\CSVTest.pdb
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\obj\Debug\CSVTest.csprojAssemblyReference.cache
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\obj\Debug\CSVTest.csproj.CoreCompileInputs.cache
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\obj\Debug\CSVTest.exe
+c:\users\kumasuje\source\repos\CSVTest\CSVTest\obj\Debug\CSVTest.pdb

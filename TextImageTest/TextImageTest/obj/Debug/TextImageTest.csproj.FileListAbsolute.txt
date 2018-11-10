@@ -1,0 +1,7 @@
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\bin\Debug\TextImageTest.exe.config
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\bin\Debug\TextImageTest.exe
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\bin\Debug\TextImageTest.pdb
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\obj\Debug\TextImageTest.csproj.CoreCompileInputs.cache
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\obj\Debug\TextImageTest.exe
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\obj\Debug\TextImageTest.pdb
+c:\users\kumasuje\source\repos\TextImageTest\TextImageTest\obj\Debug\TextImageTest.csprojAssemblyReference.cache

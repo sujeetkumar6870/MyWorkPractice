@@ -1,0 +1,163 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutNavigationBar.cshtml";
+}
+<head>
+    <style>
+        .intro{
+            width:180px;
+            clear:left;
+            text-align:right;
+            padding-right:10px;
+        }
+        .intro2{
+            float:left;
+        }
+    </style>
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="~/Bootstrap/js/bootstrap.min.js"></script>
+    @*<script type="text/javascript">
+        //$(document).ready(function () {
+        //    var producerDDL = $('#Actor0');
+        //        $.ajax({
+        //            url: '../ProductionHouseService.asmx/GetProducerList',
+        //            method: 'POST',
+        //            dataType: 'json',
+        //            success: function (data) {
+        //                $(data).each(function (index, item) {
+        //                    producerDDL.append($('<option/>', { value: item.Producer_Id, text: item.Producer_Name }));
+        //                });
+        //            }
+        //        });
+
+
+            //var producerDDL = $('#Actor0');
+            //$.ajax({
+            //    url: '../ProductionHouseService.asmx/GetActorList',
+            //    method: 'POST',
+            //    dataType: 'json',
+            //    success: function (data) {
+            //        $(data).each(function (index, item) {
+            //            producerDDL.append($('<option/>', { value: item.Actor_Id, text: item.Actor_Name }));
+            //        });
+            //    }
+            //});
+        //});
+    </script>*@
+    <script type="text/javascript">
+        function myActor() {
+
+            document.getElementById("pMovieName").disabled = true;
+            document.getElementById("pActorNumber").disabled = true;
+            document.getElementById("pProducer").disabled = true;
+            var pNumActor = document.getElementById("pActorNumber").value;
+            var container = document.getElementById("container");
+            while (container.hasChildNodes()) {
+                container.removeChild(container.lastChild);
+            }
+            container.style.borderCollapse = 'collapse';
+            for (i = 0; i < pNumActor; i++) {
+                var newTr = container.appendChild(document.createElement("tr"));
+                
+                var newTd1 = container.appendChild(document.createElement("td"));
+                
+                newTd1.setAttribute("style", "color:darkred;font-weight:bolder;font-size:large");
+                var newContent = document.createTextNode("Actor " + (i + 1));
+                newTd1.style.width = '165px';
+                newTd1.style.textAlign = "left";
+                newTd1.style.paddingTop = '.5em';
+                newTd1.style.paddingBottom = '.5em';
+                newTd1.appendChild(newContent);
+                var newTd2 = container.appendChild(document.createElement("td"));
+                newTd2.style.width = '200px';
+                newTd2.style.alignContent = "left";
+                newTd2.style.paddingTop = '.5em';
+                newTd2.style.paddingBottom = '.5em';
+                var newDropdown = document.createElement("select");
+                newDropdown.name = "Actor" + i;
+                newDropdown.id = "Actor" + i;
+                newDropdown.classList.add("form-control");                
+                newTd2.appendChild(newDropdown);
+                runAjax(i);
+                newTr.appendChild(newTd1);
+                newTr.appendChild(newTd2);
+            }
+        }
+
+        function runAjax(num) {
+            // Bind ActorList
+            $.ajax({
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                url: '../ProductionHouseService.asmx/GetActorList',
+                data: "{}",
+                dataType: 'json',
+                dataSrc: "",
+                success: function (data) {
+                    var result = JSON.parse(data.d);
+                    var actorID = "#Actor" + num;
+                    $(actorID).append($("<option/>", { value: -2, text: '--select actor--' }));
+                    for (var t = 0; t < result.length; t++) {
+                        
+                        $(actorID).append($("<option/>", { value: result[t].Actor_Id, text: result[t].Actor_Name }));
+                    }
+                    $(actorID).append($("<option/>", { value: -1, text: 'Others' }));
+                },
+                error: function (ts) {
+                    alert(ts.responseText);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            // Bind ProducerList
+            $.ajax({
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                url: '../ProductionHouseService.asmx/GetProducerList',
+                data: "{}",
+                dataType: 'json',
+                dataSrc: "",
+                success: function (data) {
+                    var result = JSON.parse(data.d);
+                    $('#pProducer').append($("<option/>", { value: -2, text: '--select producer--' }));
+                    for (var t = 0; t < result.length; t++) {
+
+                        $('#pProducer').append($("<option/>", { value: result[t].Producer_Id, text: result[t].Producer_Name }));
+                    }
+                    $('#pProducer').append($("<option/>", { value: -1, text: 'Others' }));
+                },
+                error: function (ts) {
+                    alert(ts.responseText);
+                }
+            });
+            $('body').delegate('#actorList select', 'change', function () {
+                alert('change');
+            });
+        })
+
+    </script>
+</head>
+<div class="container">
+    <div class="row">
+        <form method="post" class="form-control">
+            <table class="tabbable" border="0" align="center" style="margin-top:20px">
+                <tr class="active">
+                    <td colspan="6" align="center" style="color:cornflowerblue;font-size:x-large;font-weight:bolder;align-content:center">Add New Movie</td>
+                </tr>
+                <tr class="active"><td colspan="2">&nbsp;</td></tr>
+
+                <tr class="active">
+                    <td style="color:darkred;font-weight:bolder;font-size:large;width:170px;text-align:left">Movie Name</td>
+                    <td style="width:250px;text-align:left"><input type="text" class="form-control" id="pMovieName" name="pMovieName" required pattern="^[^-\s][a-zA-Z\s-]+$" title="can't include special character and max 20 and should not start with spaces" /></td>
+                    <td style="color:darkred;font-weight:bolder;font-size:large;width:170px;text-align:center">Producer&nbsp;&nbsp;</td>
+                    <td style="width:250px;text-align:left"><select class="form-control" id="pProducer" name="pProducer"></select></td>
+                    <td style="color:darkred;font-weight:bolder;font-size:large;width:300px;text-align:right">Number of Actor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td style="width:100px;text-align:right"><input type="number" onchange="myActor()" class="form-control" id="pActorNumber" name="pActorNumber" min="1" max="20" value="0" /></td>
+                </tr>
+            </table>
+            <div id="actorList">
+                <table class="tabbable" border="0" align="left" style="margin-top:20px" id="container"></table>
+            </div>
+        </form>
+    </div>
+</div>

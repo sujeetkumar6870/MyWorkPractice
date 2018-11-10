@@ -1,0 +1,12 @@
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\DotNetPractice\Sujeet_Project\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.csprojResolveAssemblyReference.cache
+C:\Users\kumasuje\source\repos\MPhasisBank\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\MPhasisBank\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\kumasuje\source\repos\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\kumasuje\source\repos\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\kumasuje\source\repos\MPhasisBank\BusinessEntities\obj\Debug\BusinessEntities.pdb

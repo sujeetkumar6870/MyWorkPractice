@@ -1,0 +1,7 @@
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\bin\Debug\YourQuotes.exe.config
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\bin\Debug\YourQuotes.exe
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\bin\Debug\YourQuotes.pdb
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\obj\Debug\YourQuotes.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\obj\Debug\YourQuotes.exe
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\obj\Debug\YourQuotes.pdb
+C:\Users\kumasuje\source\repos\YourQuotes\YourQuotes\obj\Debug\YourQuotes.csprojAssemblyReference.cache

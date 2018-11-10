@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MPhasisBankModelStoreContainer" CdmEntityContainer="MPhasisBankEntities">
+    <EntitySetMapping Name="AccountsEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.AccountsEntity">
+        <MappingFragment StoreEntitySet="AccountsEntities">
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Account_Type" ColumnName="Account_Type" />
+          <ScalarProperty Name="Account_Status" ColumnName="Account_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.CustomerEntity">
+        <MappingFragment StoreEntitySet="CustomerEntities">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="CPassword" ColumnName="CPassword" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer_Name" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DepartmentEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.DepartmentEntity">
+        <MappingFragment StoreEntitySet="DepartmentEntities">
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="Department_Name" ColumnName="Department_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.EmployeeEntity">
+        <MappingFragment StoreEntitySet="EmployeeEntities">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+          <ScalarProperty Name="EPassword" ColumnName="EPassword" />
+          <ScalarProperty Name="Employee_Type" ColumnName="Employee_Type" />
+          <ScalarProperty Name="Department_ID" ColumnName="Department_ID" />
+          <ScalarProperty Name="DeptID_Comp" ColumnName="DeptID_Comp" />
+          <ScalarProperty Name="PAN" ColumnName="PAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SavingsEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.SavingsEntity">
+        <MappingFragment StoreEntitySet="SavingsEntities">
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SavingTransactionsEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.SavingTransactionsEntity">
+        <MappingFragment StoreEntitySet="SavingTransactionsEntities">
+          <ScalarProperty Name="Savings_Trans_ID" ColumnName="Savings_Trans_ID" />
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Transaction_Date" ColumnName="Transaction_Date" />
+          <ScalarProperty Name="Transaction_Type" ColumnName="Transaction_Type" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoanEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.LoanEntity">
+        <MappingFragment StoreEntitySet="LoanEntities">
+          <ScalarProperty Name="Outstanding" ColumnName="Outstanding" />
+          <ScalarProperty Name="EMI" ColumnName="EMI" />
+          <ScalarProperty Name="Loan_ROI" ColumnName="Loan_ROI" />
+          <ScalarProperty Name="Tenure" ColumnName="Tenure" />
+          <ScalarProperty Name="LStart_Date" ColumnName="LStart_Date" />
+          <ScalarProperty Name="Loan_Amount" ColumnName="Loan_Amount" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Loan_Account_ID" ColumnName="Loan_Account_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoanTransactionsEntities">
+      <EntityTypeMapping TypeName="MPhasisBankModel.LoanTransactionsEntity">
+        <MappingFragment StoreEntitySet="LoanTransactionsEntities">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="EMI_Payment_Date" ColumnName="EMI_Payment_Date" />
+          <ScalarProperty Name="Loan_Account_ID" ColumnName="Loan_Account_ID" />
+          <ScalarProperty Name="Loan_Trans_ID" ColumnName="Loan_Trans_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

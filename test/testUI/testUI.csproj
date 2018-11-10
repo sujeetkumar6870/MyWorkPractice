@@ -1,0 +1,1249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD07ECB2-B183-415B-84AD-02E901E19EBF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testUI</RootNamespace>
+    <AssemblyName>testUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.5.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.5.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.5.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.5.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.5.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\nprogress.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="icheck.js" />
+    <Content Include="icheck.min.js" />
+    <Content Include="Libs\animate.css\animate.css" />
+    <Content Include="Libs\animate.css\animate.min.css" />
+    <Content Include="Libs\animate.css\gulpfile.js" />
+    <Content Include="Libs\bootstrap-progressbar\bootstrap-progressbar.js" />
+    <Content Include="Libs\bootstrap-progressbar\bootstrap-progressbar.min.js" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.2.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.2.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.3.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.3.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.4.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.0.4.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.1.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.1.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.1.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.1.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.2.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.2.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.2.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.2.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.2.2.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.2.2.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.3.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.3.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.3.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.3.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.3.2.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-2.3.2.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.0-rc1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.0-rc1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.0-rc2.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.0-rc2.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.2.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.2.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.3.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.0.3.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.1.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.1.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.1.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.1.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.2.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.2.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.0.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.0.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.1.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.1.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.2.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.2.min.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.4.css" />
+    <Content Include="Libs\bootstrap-progressbar\css\bootstrap-progressbar-3.3.4.min.css" />
+    <Content Include="Libs\bootstrap-toggle-master\css\bootstrap-toggle.css" />
+    <Content Include="Libs\bootstrap-toggle-master\css\bootstrap-toggle.min.css" />
+    <Content Include="Libs\bootstrap-toggle-master\css\bootstrap2-toggle.css" />
+    <Content Include="Libs\bootstrap-toggle-master\css\bootstrap2-toggle.min.css" />
+    <Content Include="Libs\bootstrap-toggle-master\doc\header.png" />
+    <Content Include="Libs\bootstrap-toggle-master\doc\nyt.png" />
+    <Content Include="Libs\bootstrap-toggle-master\doc\nytdev.svg" />
+    <Content Include="Libs\bootstrap-toggle-master\doc\script.js" />
+    <Content Include="Libs\bootstrap-toggle-master\doc\stylesheet.css" />
+    <Content Include="Libs\bootstrap-toggle-master\Gruntfile.js" />
+    <Content Include="Libs\bootstrap-toggle-master\index.html" />
+    <Content Include="Libs\bootstrap-toggle-master\js\bootstrap-toggle.js" />
+    <Content Include="Libs\bootstrap-toggle-master\js\bootstrap-toggle.min.js" />
+    <Content Include="Libs\bootstrap-toggle-master\js\bootstrap2-toggle.js" />
+    <Content Include="Libs\bootstrap-toggle-master\js\bootstrap2-toggle.min.js" />
+    <Content Include="Libs\Chart.js\dist\Chart.bundle.js" />
+    <Content Include="Libs\Chart.js\dist\Chart.bundle.min.js" />
+    <Content Include="Libs\Chart.js\dist\Chart.js" />
+    <Content Include="Libs\Chart.js\dist\Chart.min.js" />
+    <Content Include="Libs\Chart.js\gulpfile.js" />
+    <Content Include="Libs\Chart.js\karma.conf.ci.js" />
+    <Content Include="Libs\Chart.js\karma.conf.js" />
+    <Content Include="Libs\Chart.js\karma.coverage.conf.js" />
+    <Content Include="Libs\Chart.js\samples\AnimationCallbacks\progress-bar.html" />
+    <Content Include="Libs\Chart.js\samples\bar-horizontal.html" />
+    <Content Include="Libs\Chart.js\samples\bar-multi-axis.html" />
+    <Content Include="Libs\Chart.js\samples\bar-stacked.html" />
+    <Content Include="Libs\Chart.js\samples\bar.html" />
+    <Content Include="Libs\Chart.js\samples\bubble.html" />
+    <Content Include="Libs\Chart.js\samples\combo-bar-line.html" />
+    <Content Include="Libs\Chart.js\samples\data_label_combo-bar-line.html" />
+    <Content Include="Libs\Chart.js\samples\different-point-sizes.html" />
+    <Content Include="Libs\Chart.js\samples\doughnut.html" />
+    <Content Include="Libs\Chart.js\samples\line-customTooltips.html" />
+    <Content Include="Libs\Chart.js\samples\line-legend.html" />
+    <Content Include="Libs\Chart.js\samples\line-logarithmic.html" />
+    <Content Include="Libs\Chart.js\samples\line-multi-axis.html" />
+    <Content Include="Libs\Chart.js\samples\line-skip-points.html" />
+    <Content Include="Libs\Chart.js\samples\line-stacked-area.html" />
+    <Content Include="Libs\Chart.js\samples\line-x-axis-filter.html" />
+    <Content Include="Libs\Chart.js\samples\line.html" />
+    <Content Include="Libs\Chart.js\samples\pie-customTooltips.html" />
+    <Content Include="Libs\Chart.js\samples\pie.html" />
+    <Content Include="Libs\Chart.js\samples\polar-area.html" />
+    <Content Include="Libs\Chart.js\samples\radar-skip-points.html" />
+    <Content Include="Libs\Chart.js\samples\radar.html" />
+    <Content Include="Libs\Chart.js\samples\scatter-logX.html" />
+    <Content Include="Libs\Chart.js\samples\scatter-multi-axis.html" />
+    <Content Include="Libs\Chart.js\samples\scatter.html" />
+    <Content Include="Libs\Chart.js\samples\timeScale\combo-time-scale.html" />
+    <Content Include="Libs\Chart.js\samples\timeScale\line-time-point-data.html" />
+    <Content Include="Libs\Chart.js\samples\timeScale\line-time-scale.html" />
+    <Content Include="Libs\Chart.js\samples\tooltip-hooks.html" />
+    <Content Include="Libs\Chart.js\src\chart.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.Bar.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.Bubble.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.Doughnut.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.Line.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.PolarArea.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.Radar.js" />
+    <Content Include="Libs\Chart.js\src\charts\Chart.Scatter.js" />
+    <Content Include="Libs\Chart.js\src\controllers\controller.bar.js" />
+    <Content Include="Libs\Chart.js\src\controllers\controller.bubble.js" />
+    <Content Include="Libs\Chart.js\src\controllers\controller.doughnut.js" />
+    <Content Include="Libs\Chart.js\src\controllers\controller.line.js" />
+    <Content Include="Libs\Chart.js\src\controllers\controller.polarArea.js" />
+    <Content Include="Libs\Chart.js\src\controllers\controller.radar.js" />
+    <Content Include="Libs\Chart.js\src\core\core.animation.js" />
+    <Content Include="Libs\Chart.js\src\core\core.controller.js" />
+    <Content Include="Libs\Chart.js\src\core\core.datasetController.js" />
+    <Content Include="Libs\Chart.js\src\core\core.element.js" />
+    <Content Include="Libs\Chart.js\src\core\core.helpers.js" />
+    <Content Include="Libs\Chart.js\src\core\core.js" />
+    <Content Include="Libs\Chart.js\src\core\core.layoutService.js" />
+    <Content Include="Libs\Chart.js\src\core\core.legend.js" />
+    <Content Include="Libs\Chart.js\src\core\core.plugin.js" />
+    <Content Include="Libs\Chart.js\src\core\core.scale.js" />
+    <Content Include="Libs\Chart.js\src\core\core.scaleService.js" />
+    <Content Include="Libs\Chart.js\src\core\core.title.js" />
+    <Content Include="Libs\Chart.js\src\core\core.tooltip.js" />
+    <Content Include="Libs\Chart.js\src\elements\element.arc.js" />
+    <Content Include="Libs\Chart.js\src\elements\element.line.js" />
+    <Content Include="Libs\Chart.js\src\elements\element.point.js" />
+    <Content Include="Libs\Chart.js\src\elements\element.rectangle.js" />
+    <Content Include="Libs\Chart.js\src\scales\scale.category.js" />
+    <Content Include="Libs\Chart.js\src\scales\scale.linear.js" />
+    <Content Include="Libs\Chart.js\src\scales\scale.logarithmic.js" />
+    <Content Include="Libs\Chart.js\src\scales\scale.radialLinear.js" />
+    <Content Include="Libs\Chart.js\src\scales\scale.time.js" />
+    <Content Include="Libs\Chart.js\test\controller.bar.tests.js" />
+    <Content Include="Libs\Chart.js\test\controller.bubble.tests.js" />
+    <Content Include="Libs\Chart.js\test\controller.doughnut.tests.js" />
+    <Content Include="Libs\Chart.js\test\controller.line.tests.js" />
+    <Content Include="Libs\Chart.js\test\controller.polarArea.tests.js" />
+    <Content Include="Libs\Chart.js\test\controller.radar.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.element.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.helpers.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.layoutService.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.legend.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.plugin.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.scaleService.tests.js" />
+    <Content Include="Libs\Chart.js\test\core.title.tests.js" />
+    <Content Include="Libs\Chart.js\test\defaultConfig.tests.js" />
+    <Content Include="Libs\Chart.js\test\element.arc.tests.js" />
+    <Content Include="Libs\Chart.js\test\element.line.tests.js" />
+    <Content Include="Libs\Chart.js\test\element.point.tests.js" />
+    <Content Include="Libs\Chart.js\test\element.rectangle.tests.js" />
+    <Content Include="Libs\Chart.js\test\mockContext.js" />
+    <Content Include="Libs\Chart.js\test\scale.category.tests.js" />
+    <Content Include="Libs\Chart.js\test\scale.linear.tests.js" />
+    <Content Include="Libs\Chart.js\test\scale.logarithmic.tests.js" />
+    <Content Include="Libs\Chart.js\test\scale.radialLinear.tests.js" />
+    <Content Include="Libs\Chart.js\test\scale.time.tests.js" />
+    <Content Include="Libs\datatables.net-bs\css\dataTables.bootstrap.css" />
+    <Content Include="Libs\datatables.net-bs\css\dataTables.bootstrap.min.css" />
+    <Content Include="Libs\datatables.net-bs\js\dataTables.bootstrap.js" />
+    <Content Include="Libs\datatables.net-bs\js\dataTables.bootstrap.min.js" />
+    <Content Include="Libs\datatables.net-bs\License.txt" />
+    <Content Include="Libs\datatables.net-buttons-bs\css\buttons.bootstrap.css" />
+    <Content Include="Libs\datatables.net-buttons-bs\css\buttons.bootstrap.min.css" />
+    <Content Include="Libs\datatables.net-buttons-bs\js\buttons.bootstrap.js" />
+    <Content Include="Libs\datatables.net-buttons-bs\js\buttons.bootstrap.min.js" />
+    <Content Include="Libs\datatables.net-buttons-bs\License.txt" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.colVis.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.colVis.min.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.flash.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.flash.min.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.html5.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.html5.min.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.print.js" />
+    <Content Include="Libs\datatables.net-buttons\js\buttons.print.min.js" />
+    <Content Include="Libs\datatables.net-buttons\js\dataTables.buttons.js" />
+    <Content Include="Libs\datatables.net-buttons\js\dataTables.buttons.min.js" />
+    <Content Include="Libs\datatables.net-buttons\License.txt" />
+    <Content Include="Libs\datatables.net\js\jquery.dataTables.js" />
+    <Content Include="Libs\datatables.net\js\jquery.dataTables.min.js" />
+    <Content Include="Libs\datatables.net\License.txt" />
+    <Content Include="Libs\echarts\asset\logo.png" />
+    <Content Include="Libs\echarts\build\amd2common.js" />
+    <Content Include="Libs\echarts\build\mangleString.js" />
+    <Content Include="Libs\echarts\build\optimize.js" />
+    <Content Include="Libs\echarts\dist\echarts.common.js" />
+    <Content Include="Libs\echarts\dist\echarts.common.min.js" />
+    <Content Include="Libs\echarts\dist\echarts.js" />
+    <Content Include="Libs\echarts\dist\echarts.min.js" />
+    <Content Include="Libs\echarts\dist\echarts.simple.js" />
+    <Content Include="Libs\echarts\dist\echarts.simple.min.js" />
+    <Content Include="Libs\echarts\dist\extension\bmap.js" />
+    <Content Include="Libs\echarts\dist\extension\bmap.min.js" />
+    <Content Include="Libs\echarts\dist\extension\dataTool.js" />
+    <Content Include="Libs\echarts\dist\extension\dataTool.min.js" />
+    <Content Include="Libs\echarts\extension\bmap\bmap.js" />
+    <Content Include="Libs\echarts\extension\bmap\BMapCoordSys.js" />
+    <Content Include="Libs\echarts\extension\bmap\BMapModel.js" />
+    <Content Include="Libs\echarts\extension\bmap\BMapView.js" />
+    <Content Include="Libs\echarts\extension\dataTool\gexf.js" />
+    <Content Include="Libs\echarts\extension\dataTool\index.js" />
+    <Content Include="Libs\echarts\extension\dataTool\prepareBoxplotData.js" />
+    <Content Include="Libs\echarts\extension\dataTool\quantile.js" />
+    <Content Include="Libs\echarts\extension\echarts.js" />
+    <Content Include="Libs\echarts\extension\webpack.config.js" />
+    <Content Include="Libs\echarts\index.common.js" />
+    <Content Include="Libs\echarts\index.js" />
+    <Content Include="Libs\echarts\index.simple.js" />
+    <Content Include="Libs\echarts\map\js\china-contour.js" />
+    <Content Include="Libs\echarts\map\js\china.js" />
+    <Content Include="Libs\echarts\map\js\province\anhui.js" />
+    <Content Include="Libs\echarts\map\js\province\aomen.js" />
+    <Content Include="Libs\echarts\map\js\province\beijing.js" />
+    <Content Include="Libs\echarts\map\js\province\chongqing.js" />
+    <Content Include="Libs\echarts\map\js\province\fujian.js" />
+    <Content Include="Libs\echarts\map\js\province\gansu.js" />
+    <Content Include="Libs\echarts\map\js\province\guangdong.js" />
+    <Content Include="Libs\echarts\map\js\province\guangxi.js" />
+    <Content Include="Libs\echarts\map\js\province\guizhou.js" />
+    <Content Include="Libs\echarts\map\js\province\hainan.js" />
+    <Content Include="Libs\echarts\map\js\province\hebei.js" />
+    <Content Include="Libs\echarts\map\js\province\heilongjiang.js" />
+    <Content Include="Libs\echarts\map\js\province\henan.js" />
+    <Content Include="Libs\echarts\map\js\province\hubei.js" />
+    <Content Include="Libs\echarts\map\js\province\hunan.js" />
+    <Content Include="Libs\echarts\map\js\province\jiangsu.js" />
+    <Content Include="Libs\echarts\map\js\province\jiangxi.js" />
+    <Content Include="Libs\echarts\map\js\province\jilin.js" />
+    <Content Include="Libs\echarts\map\js\province\liaoning.js" />
+    <Content Include="Libs\echarts\map\js\province\neimenggu.js" />
+    <Content Include="Libs\echarts\map\js\province\ningxia.js" />
+    <Content Include="Libs\echarts\map\js\province\qinghai.js" />
+    <Content Include="Libs\echarts\map\js\province\shandong.js" />
+    <Content Include="Libs\echarts\map\js\province\shanghai.js" />
+    <Content Include="Libs\echarts\map\js\province\shanxi.js" />
+    <Content Include="Libs\echarts\map\js\province\shanxi1.js" />
+    <Content Include="Libs\echarts\map\js\province\sichuan.js" />
+    <Content Include="Libs\echarts\map\js\province\tianjin.js" />
+    <Content Include="Libs\echarts\map\js\province\xianggang.js" />
+    <Content Include="Libs\echarts\map\js\province\xinjiang.js" />
+    <Content Include="Libs\echarts\map\js\province\xizang.js" />
+    <Content Include="Libs\echarts\map\js\province\yunnan.js" />
+    <Content Include="Libs\echarts\map\js\province\zhejiang.js" />
+    <Content Include="Libs\echarts\map\js\world.js" />
+    <Content Include="Libs\echarts\src\action\createDataSelectAction.js" />
+    <Content Include="Libs\echarts\src\action\geoRoam.js" />
+    <Content Include="Libs\echarts\src\action\roamHelper.js" />
+    <Content Include="Libs\echarts\src\chart\bar.js" />
+    <Content Include="Libs\echarts\src\chart\bar\barItemStyle.js" />
+    <Content Include="Libs\echarts\src\chart\bar\BarSeries.js" />
+    <Content Include="Libs\echarts\src\chart\bar\BarView.js" />
+    <Content Include="Libs\echarts\src\chart\boxplot.js" />
+    <Content Include="Libs\echarts\src\chart\boxplot\boxplotLayout.js" />
+    <Content Include="Libs\echarts\src\chart\boxplot\BoxplotSeries.js" />
+    <Content Include="Libs\echarts\src\chart\boxplot\BoxplotView.js" />
+    <Content Include="Libs\echarts\src\chart\boxplot\boxplotVisual.js" />
+    <Content Include="Libs\echarts\src\chart\candlestick.js" />
+    <Content Include="Libs\echarts\src\chart\candlestick\candlestickLayout.js" />
+    <Content Include="Libs\echarts\src\chart\candlestick\CandlestickSeries.js" />
+    <Content Include="Libs\echarts\src\chart\candlestick\CandlestickView.js" />
+    <Content Include="Libs\echarts\src\chart\candlestick\candlestickVisual.js" />
+    <Content Include="Libs\echarts\src\chart\candlestick\preprocessor.js" />
+    <Content Include="Libs\echarts\src\chart\chord.js" />
+    <Content Include="Libs\echarts\src\chart\chord\chordCircularLayout.js" />
+    <Content Include="Libs\echarts\src\chart\chord\ChordSeries.js" />
+    <Content Include="Libs\echarts\src\chart\chord\ChordView.js" />
+    <Content Include="Libs\echarts\src\chart\chord\Ribbon.js" />
+    <Content Include="Libs\echarts\src\chart\effectScatter.js" />
+    <Content Include="Libs\echarts\src\chart\effectScatter\EffectScatterSeries.js" />
+    <Content Include="Libs\echarts\src\chart\effectScatter\EffectScatterView.js" />
+    <Content Include="Libs\echarts\src\chart\funnel.js" />
+    <Content Include="Libs\echarts\src\chart\funnel\funnelLayout.js" />
+    <Content Include="Libs\echarts\src\chart\funnel\FunnelSeries.js" />
+    <Content Include="Libs\echarts\src\chart\funnel\FunnelView.js" />
+    <Content Include="Libs\echarts\src\chart\gauge.js" />
+    <Content Include="Libs\echarts\src\chart\gauge\GaugeSeries.js" />
+    <Content Include="Libs\echarts\src\chart\gauge\GaugeView.js" />
+    <Content Include="Libs\echarts\src\chart\gauge\PointerPath.js" />
+    <Content Include="Libs\echarts\src\chart\graph.js" />
+    <Content Include="Libs\echarts\src\chart\graph\adjustEdge.js" />
+    <Content Include="Libs\echarts\src\chart\graph\backwardCompat.js" />
+    <Content Include="Libs\echarts\src\chart\graph\categoryFilter.js" />
+    <Content Include="Libs\echarts\src\chart\graph\categoryVisual.js" />
+    <Content Include="Libs\echarts\src\chart\graph\circularLayout.js" />
+    <Content Include="Libs\echarts\src\chart\graph\circularLayoutHelper.js" />
+    <Content Include="Libs\echarts\src\chart\graph\createView.js" />
+    <Content Include="Libs\echarts\src\chart\graph\edgeVisual.js" />
+    <Content Include="Libs\echarts\src\chart\graph\forceHelper.js" />
+    <Content Include="Libs\echarts\src\chart\graph\forceLayout.js" />
+    <Content Include="Libs\echarts\src\chart\graph\GraphSeries.js" />
+    <Content Include="Libs\echarts\src\chart\graph\GraphView.js" />
+    <Content Include="Libs\echarts\src\chart\graph\roamAction.js" />
+    <Content Include="Libs\echarts\src\chart\graph\simpleLayout.js" />
+    <Content Include="Libs\echarts\src\chart\graph\simpleLayoutEdge.js" />
+    <Content Include="Libs\echarts\src\chart\graph\simpleLayoutHelper.js" />
+    <Content Include="Libs\echarts\src\chart\heatmap.js" />
+    <Content Include="Libs\echarts\src\chart\heatmap\HeatmapLayer.js" />
+    <Content Include="Libs\echarts\src\chart\heatmap\HeatmapSeries.js" />
+    <Content Include="Libs\echarts\src\chart\heatmap\HeatmapView.js" />
+    <Content Include="Libs\echarts\src\chart\helper\createGraphFromNodeEdge.js" />
+    <Content Include="Libs\echarts\src\chart\helper\createGraphFromNodeMatrix.js" />
+    <Content Include="Libs\echarts\src\chart\helper\createListFromArray.js" />
+    <Content Include="Libs\echarts\src\chart\helper\EffectLine.js" />
+    <Content Include="Libs\echarts\src\chart\helper\EffectSymbol.js" />
+    <Content Include="Libs\echarts\src\chart\helper\LargeSymbolDraw.js" />
+    <Content Include="Libs\echarts\src\chart\helper\Line.js" />
+    <Content Include="Libs\echarts\src\chart\helper\LineDraw.js" />
+    <Content Include="Libs\echarts\src\chart\helper\LinePath.js" />
+    <Content Include="Libs\echarts\src\chart\helper\Symbol.js" />
+    <Content Include="Libs\echarts\src\chart\helper\SymbolDraw.js" />
+    <Content Include="Libs\echarts\src\chart\helper\whiskerBoxCommon.js" />
+    <Content Include="Libs\echarts\src\chart\helper\WhiskerBoxDraw.js" />
+    <Content Include="Libs\echarts\src\chart\line.js" />
+    <Content Include="Libs\echarts\src\chart\lines.js" />
+    <Content Include="Libs\echarts\src\chart\lines\linesLayout.js" />
+    <Content Include="Libs\echarts\src\chart\lines\LinesSeries.js" />
+    <Content Include="Libs\echarts\src\chart\lines\LinesView.js" />
+    <Content Include="Libs\echarts\src\chart\line\lineAnimationDiff.js" />
+    <Content Include="Libs\echarts\src\chart\line\LineSeries.js" />
+    <Content Include="Libs\echarts\src\chart\line\LineView.js" />
+    <Content Include="Libs\echarts\src\chart\line\poly.js" />
+    <Content Include="Libs\echarts\src\chart\map.js" />
+    <Content Include="Libs\echarts\src\chart\map\backwardCompat.js" />
+    <Content Include="Libs\echarts\src\chart\map\mapDataStatistic.js" />
+    <Content Include="Libs\echarts\src\chart\map\MapSeries.js" />
+    <Content Include="Libs\echarts\src\chart\map\mapSymbolLayout.js" />
+    <Content Include="Libs\echarts\src\chart\map\MapView.js" />
+    <Content Include="Libs\echarts\src\chart\map\mapVisual.js" />
+    <Content Include="Libs\echarts\src\chart\parallel.js" />
+    <Content Include="Libs\echarts\src\chart\parallel\ParallelSeries.js" />
+    <Content Include="Libs\echarts\src\chart\parallel\ParallelView.js" />
+    <Content Include="Libs\echarts\src\chart\parallel\parallelVisual.js" />
+    <Content Include="Libs\echarts\src\chart\pie.js" />
+    <Content Include="Libs\echarts\src\chart\pie\labelLayout.js" />
+    <Content Include="Libs\echarts\src\chart\pie\pieLayout.js" />
+    <Content Include="Libs\echarts\src\chart\pie\PieSeries.js" />
+    <Content Include="Libs\echarts\src\chart\pie\PieView.js" />
+    <Content Include="Libs\echarts\src\chart\radar.js" />
+    <Content Include="Libs\echarts\src\chart\radar\backwardCompat.js" />
+    <Content Include="Libs\echarts\src\chart\radar\radarLayout.js" />
+    <Content Include="Libs\echarts\src\chart\radar\RadarSeries.js" />
+    <Content Include="Libs\echarts\src\chart\radar\RadarView.js" />
+    <Content Include="Libs\echarts\src\chart\sankey.js" />
+    <Content Include="Libs\echarts\src\chart\sankey\sankeyLayout.js" />
+    <Content Include="Libs\echarts\src\chart\sankey\SankeySeries.js" />
+    <Content Include="Libs\echarts\src\chart\sankey\SankeyView.js" />
+    <Content Include="Libs\echarts\src\chart\sankey\sankeyVisual.js" />
+    <Content Include="Libs\echarts\src\chart\scatter.js" />
+    <Content Include="Libs\echarts\src\chart\scatter\ScatterSeries.js" />
+    <Content Include="Libs\echarts\src\chart\scatter\ScatterView.js" />
+    <Content Include="Libs\echarts\src\chart\themeRiver.js" />
+    <Content Include="Libs\echarts\src\chart\themeRiver\themeRiverLayout.js" />
+    <Content Include="Libs\echarts\src\chart\themeRiver\ThemeRiverSeries.js" />
+    <Content Include="Libs\echarts\src\chart\themeRiver\ThemeRiverView.js" />
+    <Content Include="Libs\echarts\src\chart\themeRiver\themeRiverVisual.js" />
+    <Content Include="Libs\echarts\src\chart\treemap.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\Breadcrumb.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\helper.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\treemapAction.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\treemapLayout.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\TreemapSeries.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\TreemapView.js" />
+    <Content Include="Libs\echarts\src\chart\treemap\treemapVisual.js" />
+    <Content Include="Libs\echarts\src\component\angleAxis.js" />
+    <Content Include="Libs\echarts\src\component\axis.js" />
+    <Content Include="Libs\echarts\src\component\axis\AngleAxisView.js" />
+    <Content Include="Libs\echarts\src\component\axis\AxisBuilder.js" />
+    <Content Include="Libs\echarts\src\component\axis\AxisView.js" />
+    <Content Include="Libs\echarts\src\component\axis\parallelAxisAction.js" />
+    <Content Include="Libs\echarts\src\component\axis\ParallelAxisView.js" />
+    <Content Include="Libs\echarts\src\component\axis\RadiusAxisView.js" />
+    <Content Include="Libs\echarts\src\component\axis\SingleAxisView.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom.js" />
+    <Content Include="Libs\echarts\src\component\dataZoomInside.js" />
+    <Content Include="Libs\echarts\src\component\dataZoomSelect.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\AxisProxy.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\dataZoomAction.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\DataZoomModel.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\dataZoomProcessor.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\DataZoomView.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\history.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\InsideZoomModel.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\InsideZoomView.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\roams.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\SelectZoomModel.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\SelectZoomView.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\SliderZoomModel.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\SliderZoomView.js" />
+    <Content Include="Libs\echarts\src\component\dataZoom\typeDefaulter.js" />
+    <Content Include="Libs\echarts\src\component\geo.js" />
+    <Content Include="Libs\echarts\src\component\geo\GeoView.js" />
+    <Content Include="Libs\echarts\src\component\grid.js" />
+    <Content Include="Libs\echarts\src\component\helper\interactionMutex.js" />
+    <Content Include="Libs\echarts\src\component\helper\listComponent.js" />
+    <Content Include="Libs\echarts\src\component\helper\MapDraw.js" />
+    <Content Include="Libs\echarts\src\component\helper\RoamController.js" />
+    <Content Include="Libs\echarts\src\component\helper\selectableMixin.js" />
+    <Content Include="Libs\echarts\src\component\helper\SelectController.js" />
+    <Content Include="Libs\echarts\src\component\helper\sliderMove.js" />
+    <Content Include="Libs\echarts\src\component\legend.js" />
+    <Content Include="Libs\echarts\src\component\legend\legendAction.js" />
+    <Content Include="Libs\echarts\src\component\legend\legendFilter.js" />
+    <Content Include="Libs\echarts\src\component\legend\LegendModel.js" />
+    <Content Include="Libs\echarts\src\component\legend\LegendView.js" />
+    <Content Include="Libs\echarts\src\component\marker\markerHelper.js" />
+    <Content Include="Libs\echarts\src\component\marker\MarkLineModel.js" />
+    <Content Include="Libs\echarts\src\component\marker\MarkLineView.js" />
+    <Content Include="Libs\echarts\src\component\marker\MarkPointModel.js" />
+    <Content Include="Libs\echarts\src\component\marker\MarkPointView.js" />
+    <Content Include="Libs\echarts\src\component\markLine.js" />
+    <Content Include="Libs\echarts\src\component\markPoint.js" />
+    <Content Include="Libs\echarts\src\component\parallel.js" />
+    <Content Include="Libs\echarts\src\component\parallelAxis.js" />
+    <Content Include="Libs\echarts\src\component\polar.js" />
+    <Content Include="Libs\echarts\src\component\radar.js" />
+    <Content Include="Libs\echarts\src\component\radar\RadarView.js" />
+    <Content Include="Libs\echarts\src\component\radiusAxis.js" />
+    <Content Include="Libs\echarts\src\component\single.js" />
+    <Content Include="Libs\echarts\src\component\singleAxis.js" />
+    <Content Include="Libs\echarts\src\component\timeline.js" />
+    <Content Include="Libs\echarts\src\component\timeline\preprocessor.js" />
+    <Content Include="Libs\echarts\src\component\timeline\SliderTimelineModel.js" />
+    <Content Include="Libs\echarts\src\component\timeline\SliderTimelineView.js" />
+    <Content Include="Libs\echarts\src\component\timeline\timelineAction.js" />
+    <Content Include="Libs\echarts\src\component\timeline\TimelineAxis.js" />
+    <Content Include="Libs\echarts\src\component\timeline\TimelineModel.js" />
+    <Content Include="Libs\echarts\src\component\timeline\TimelineView.js" />
+    <Content Include="Libs\echarts\src\component\timeline\typeDefaulter.js" />
+    <Content Include="Libs\echarts\src\component\title.js" />
+    <Content Include="Libs\echarts\src\component\toolbox.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\featureManager.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\feature\DataView.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\feature\DataZoom.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\feature\MagicType.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\feature\Restore.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\feature\SaveAsImage.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\ToolboxModel.js" />
+    <Content Include="Libs\echarts\src\component\toolbox\ToolboxView.js" />
+    <Content Include="Libs\echarts\src\component\tooltip.js" />
+    <Content Include="Libs\echarts\src\component\tooltip\TooltipContent.js" />
+    <Content Include="Libs\echarts\src\component\tooltip\TooltipModel.js" />
+    <Content Include="Libs\echarts\src\component\tooltip\TooltipView.js" />
+    <Content Include="Libs\echarts\src\component\visualMap.js" />
+    <Content Include="Libs\echarts\src\component\visualMapContinuous.js" />
+    <Content Include="Libs\echarts\src\component\visualMapPiecewise.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\ContinuousModel.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\ContinuousView.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\helper.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\PiecewiseModel.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\PiecewiseView.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\preprocessor.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\typeDefaulter.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\visualCoding.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\visualMapAction.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\VisualMapModel.js" />
+    <Content Include="Libs\echarts\src\component\visualMap\VisualMapView.js" />
+    <Content Include="Libs\echarts\src\CoordinateSystem.js" />
+    <Content Include="Libs\echarts\src\coord\Axis.js" />
+    <Content Include="Libs\echarts\src\coord\axisDefault.js" />
+    <Content Include="Libs\echarts\src\coord\axisHelper.js" />
+    <Content Include="Libs\echarts\src\coord\axisModelCommonMixin.js" />
+    <Content Include="Libs\echarts\src\coord\axisModelCreator.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\Axis2D.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\axisLabelInterval.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\AxisModel.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\Cartesian.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\Cartesian2D.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\Grid.js" />
+    <Content Include="Libs\echarts\src\coord\cartesian\GridModel.js" />
+    <Content Include="Libs\echarts\src\coord\geo\fix\geoCoord.js" />
+    <Content Include="Libs\echarts\src\coord\geo\fix\nanhai.js" />
+    <Content Include="Libs\echarts\src\coord\geo\fix\textCoord.js" />
+    <Content Include="Libs\echarts\src\coord\geo\Geo.js" />
+    <Content Include="Libs\echarts\src\coord\geo\geoCreator.js" />
+    <Content Include="Libs\echarts\src\coord\geo\GeoModel.js" />
+    <Content Include="Libs\echarts\src\coord\geo\parseGeoJson.js" />
+    <Content Include="Libs\echarts\src\coord\geo\Region.js" />
+    <Content Include="Libs\echarts\src\coord\parallel\AxisModel.js" />
+    <Content Include="Libs\echarts\src\coord\parallel\Parallel.js" />
+    <Content Include="Libs\echarts\src\coord\parallel\ParallelAxis.js" />
+    <Content Include="Libs\echarts\src\coord\parallel\parallelCreator.js" />
+    <Content Include="Libs\echarts\src\coord\parallel\ParallelModel.js" />
+    <Content Include="Libs\echarts\src\coord\parallel\parallelPreprocessor.js" />
+    <Content Include="Libs\echarts\src\coord\polar\AngleAxis.js" />
+    <Content Include="Libs\echarts\src\coord\polar\AxisModel.js" />
+    <Content Include="Libs\echarts\src\coord\polar\Polar.js" />
+    <Content Include="Libs\echarts\src\coord\polar\polarCreator.js" />
+    <Content Include="Libs\echarts\src\coord\polar\PolarModel.js" />
+    <Content Include="Libs\echarts\src\coord\polar\RadiusAxis.js" />
+    <Content Include="Libs\echarts\src\coord\radar\IndicatorAxis.js" />
+    <Content Include="Libs\echarts\src\coord\radar\Radar.js" />
+    <Content Include="Libs\echarts\src\coord\radar\RadarModel.js" />
+    <Content Include="Libs\echarts\src\coord\single\AxisModel.js" />
+    <Content Include="Libs\echarts\src\coord\single\Single.js" />
+    <Content Include="Libs\echarts\src\coord\single\SingleAxis.js" />
+    <Content Include="Libs\echarts\src\coord\single\singleCreator.js" />
+    <Content Include="Libs\echarts\src\coord\View.js" />
+    <Content Include="Libs\echarts\src\data\DataDiffer.js" />
+    <Content Include="Libs\echarts\src\data\Graph.js" />
+    <Content Include="Libs\echarts\src\data\helper\completeDimensions.js" />
+    <Content Include="Libs\echarts\src\data\helper\linkList.js" />
+    <Content Include="Libs\echarts\src\data\List.js" />
+    <Content Include="Libs\echarts\src\data\Tree.js" />
+    <Content Include="Libs\echarts\src\echarts.js" />
+    <Content Include="Libs\echarts\src\ExtensionAPI.js" />
+    <Content Include="Libs\echarts\src\layout\barGrid.js" />
+    <Content Include="Libs\echarts\src\layout\points.js" />
+    <Content Include="Libs\echarts\src\loading\default.js" />
+    <Content Include="Libs\echarts\src\model\Component.js" />
+    <Content Include="Libs\echarts\src\model\Global.js" />
+    <Content Include="Libs\echarts\src\model\globalDefault.js" />
+    <Content Include="Libs\echarts\src\model\mixin\areaStyle.js" />
+    <Content Include="Libs\echarts\src\model\mixin\boxLayout.js" />
+    <Content Include="Libs\echarts\src\model\mixin\itemStyle.js" />
+    <Content Include="Libs\echarts\src\model\mixin\lineStyle.js" />
+    <Content Include="Libs\echarts\src\model\mixin\makeStyleMapper.js" />
+    <Content Include="Libs\echarts\src\model\mixin\textStyle.js" />
+    <Content Include="Libs\echarts\src\model\Model.js" />
+    <Content Include="Libs\echarts\src\model\OptionManager.js" />
+    <Content Include="Libs\echarts\src\model\Series.js" />
+    <Content Include="Libs\echarts\src\preprocessor\backwardCompat.js" />
+    <Content Include="Libs\echarts\src\preprocessor\helper\compatStyle.js" />
+    <Content Include="Libs\echarts\src\processor\dataFilter.js" />
+    <Content Include="Libs\echarts\src\processor\dataSample.js" />
+    <Content Include="Libs\echarts\src\scale\Interval.js" />
+    <Content Include="Libs\echarts\src\scale\Log.js" />
+    <Content Include="Libs\echarts\src\scale\Ordinal.js" />
+    <Content Include="Libs\echarts\src\scale\Scale.js" />
+    <Content Include="Libs\echarts\src\scale\Time.js" />
+    <Content Include="Libs\echarts\src\util\animation.js" />
+    <Content Include="Libs\echarts\src\util\array\nest.js" />
+    <Content Include="Libs\echarts\src\util\clazz.js" />
+    <Content Include="Libs\echarts\src\util\component.js" />
+    <Content Include="Libs\echarts\src\util\format.js" />
+    <Content Include="Libs\echarts\src\util\graphic.js" />
+    <Content Include="Libs\echarts\src\util\KDTree.js" />
+    <Content Include="Libs\echarts\src\util\layout.js" />
+    <Content Include="Libs\echarts\src\util\model.js" />
+    <Content Include="Libs\echarts\src\util\number.js" />
+    <Content Include="Libs\echarts\src\util\quickSelect.js" />
+    <Content Include="Libs\echarts\src\util\symbol.js" />
+    <Content Include="Libs\echarts\src\util\throttle.js" />
+    <Content Include="Libs\echarts\src\view\Chart.js" />
+    <Content Include="Libs\echarts\src\view\Component.js" />
+    <Content Include="Libs\echarts\src\visual\dataColor.js" />
+    <Content Include="Libs\echarts\src\visual\seriesColor.js" />
+    <Content Include="Libs\echarts\src\visual\symbol.js" />
+    <Content Include="Libs\echarts\src\visual\visualDefault.js" />
+    <Content Include="Libs\echarts\src\visual\VisualMapping.js" />
+    <Content Include="Libs\echarts\test\area.html" />
+    <Content Include="Libs\echarts\test\area2.html" />
+    <Content Include="Libs\echarts\test\axes.html" />
+    <Content Include="Libs\echarts\test\axis.html" />
+    <Content Include="Libs\echarts\test\bar-large.html" />
+    <Content Include="Libs\echarts\test\bar.html" />
+    <Content Include="Libs\echarts\test\bar2.html" />
+    <Content Include="Libs\echarts\test\bmap.html" />
+    <Content Include="Libs\echarts\test\boxplot-multi.html" />
+    <Content Include="Libs\echarts\test\boxplot.html" />
+    <Content Include="Libs\echarts\test\candlestick.html" />
+    <Content Include="Libs\echarts\test\candlestickConnect.html" />
+    <Content Include="Libs\echarts\test\chord.html" />
+    <Content Include="Libs\echarts\test\color-mix-aqi.html" />
+    <Content Include="Libs\echarts\test\config.js" />
+    <Content Include="Libs\echarts\test\connect.html" />
+    <Content Include="Libs\echarts\test\connect2.html" />
+    <Content Include="Libs\echarts\test\dataView.html" />
+    <Content Include="Libs\echarts\test\dataZoom-axes.html" />
+    <Content Include="Libs\echarts\test\dataZoom-axis-type.html" />
+    <Content Include="Libs\echarts\test\dataZoom-cartesian-h.html" />
+    <Content Include="Libs\echarts\test\dataZoom-cartesian-v.html" />
+    <Content Include="Libs\echarts\test\dataZoom-dataShadow.html" />
+    <Content Include="Libs\echarts\test\dataZoom-dataShadow0.html" />
+    <Content Include="Libs\echarts\test\dataZoom-dataShadow1.html" />
+    <Content Include="Libs\echarts\test\dataZoom-dataShadow2.html" />
+    <Content Include="Libs\echarts\test\dataZoom-dynamic.html" />
+    <Content Include="Libs\echarts\test\dataZoom-rainfall-connect.html" />
+    <Content Include="Libs\echarts\test\dataZoom-rainfall-inside.html" />
+    <Content Include="Libs\echarts\test\dataZoom-rainfall.html" />
+    <Content Include="Libs\echarts\test\dataZoom-scatter-category.html" />
+    <Content Include="Libs\echarts\test\dataZoom-scatter-hv-polar.html" />
+    <Content Include="Libs\echarts\test\dataZoom-scatter-hv.html" />
+    <Content Include="Libs\echarts\test\dataZoom-scatter-toolbox.html" />
+    <Content Include="Libs\echarts\test\dataZoomHighPrecision.html" />
+    <Content Include="Libs\echarts\test\data\aqi\BJdata.js" />
+    <Content Include="Libs\echarts\test\data\aqi\GZdata.js" />
+    <Content Include="Libs\echarts\test\data\aqi\processAQI.js" />
+    <Content Include="Libs\echarts\test\data\aqi\SHdata.js" />
+    <Content Include="Libs\echarts\test\data\disk.tree.js" />
+    <Content Include="Libs\echarts\test\data\Michelson-Morley.json.js" />
+    <Content Include="Libs\echarts\test\data\obama_budget_proposal_2012.tree.js" />
+    <Content Include="Libs\echarts\test\data\rainfall.json.js" />
+    <Content Include="Libs\echarts\test\data\security-sh-2013.json.js" />
+    <Content Include="Libs\echarts\test\data\timelineGDP.js" />
+    <Content Include="Libs\echarts\test\diff.html" />
+    <Content Include="Libs\echarts\test\dynamicData.html" />
+    <Content Include="Libs\echarts\test\effectScatter.html" />
+    <Content Include="Libs\echarts\test\esl.js" />
+    <Content Include="Libs\echarts\test\force.html" />
+    <Content Include="Libs\echarts\test\force2.html" />
+    <Content Include="Libs\echarts\test\force3.html" />
+    <Content Include="Libs\echarts\test\funnel.html" />
+    <Content Include="Libs\echarts\test\gauge.html" />
+    <Content Include="Libs\echarts\test\geoLine.html" />
+    <Content Include="Libs\echarts\test\geoScatter.html" />
+    <Content Include="Libs\echarts\test\getOption.html" />
+    <Content Include="Libs\echarts\test\graph-grid.html" />
+    <Content Include="Libs\echarts\test\graph-simple.html" />
+    <Content Include="Libs\echarts\test\graph.html" />
+    <Content Include="Libs\echarts\test\heatmap-map.html" />
+    <Content Include="Libs\echarts\test\heatmap.html" />
+    <Content Include="Libs\echarts\test\ie8.html" />
+    <Content Include="Libs\echarts\test\largeLine.html" />
+    <Content Include="Libs\echarts\test\lib\dat.gui.min.js" />
+    <Content Include="Libs\echarts\test\lib\draggable.js" />
+    <Content Include="Libs\echarts\test\lib\facePrint.js" />
+    <Content Include="Libs\echarts\test\lib\jquery.min.js" />
+    <Content Include="Libs\echarts\test\line.html" />
+    <Content Include="Libs\echarts\test\loading.html" />
+    <Content Include="Libs\echarts\test\logScale.html" />
+    <Content Include="Libs\echarts\test\map-contour.html" />
+    <Content Include="Libs\echarts\test\map.html" />
+    <Content Include="Libs\echarts\test\mapWorld.html" />
+    <Content Include="Libs\echarts\test\markLine.html" />
+    <Content Include="Libs\echarts\test\markPoint.html" />
+    <Content Include="Libs\echarts\test\masterPainterColorChoice.html" />
+    <Content Include="Libs\echarts\test\media-dataZoom.html" />
+    <Content Include="Libs\echarts\test\media-finance.html" />
+    <Content Include="Libs\echarts\test\media-pie.html" />
+    <Content Include="Libs\echarts\test\mix.html" />
+    <Content Include="Libs\echarts\test\mobileBench.html" />
+    <Content Include="Libs\echarts\test\multipleGrid.html" />
+    <Content Include="Libs\echarts\test\parallel-aqi.html" />
+    <Content Include="Libs\echarts\test\pie.html" />
+    <Content Include="Libs\echarts\test\pie2.html" />
+    <Content Include="Libs\echarts\test\pie3.html" />
+    <Content Include="Libs\echarts\test\pieDynamic.html" />
+    <Content Include="Libs\echarts\test\polarLine.html" />
+    <Content Include="Libs\echarts\test\polarLine2.html" />
+    <Content Include="Libs\echarts\test\polarScatter.html" />
+    <Content Include="Libs\echarts\test\punchCard.html" />
+    <Content Include="Libs\echarts\test\radar.html" />
+    <Content Include="Libs\echarts\test\radar2.html" />
+    <Content Include="Libs\echarts\test\radar3.html" />
+    <Content Include="Libs\echarts\test\radar4.html" />
+    <Content Include="Libs\echarts\test\reset.css" />
+    <Content Include="Libs\echarts\test\roseType.html" />
+    <Content Include="Libs\echarts\test\sankey.html" />
+    <Content Include="Libs\echarts\test\scale-integer.html" />
+    <Content Include="Libs\echarts\test\scatter.html" />
+    <Content Include="Libs\echarts\test\selectedMode.html" />
+    <Content Include="Libs\echarts\test\showTip.html" />
+    <Content Include="Libs\echarts\test\symbol.html" />
+    <Content Include="Libs\echarts\test\theme.html" />
+    <Content Include="Libs\echarts\test\themeRiver.html" />
+    <Content Include="Libs\echarts\test\timeline-finance.html" />
+    <Content Include="Libs\echarts\test\timeline-layout.html" />
+    <Content Include="Libs\echarts\test\timeScale.html" />
+    <Content Include="Libs\echarts\test\tooltip.html" />
+    <Content Include="Libs\echarts\test\treemap-disk.html" />
+    <Content Include="Libs\echarts\test\treemap-obama.html" />
+    <Content Include="Libs\echarts\test\treemap-option.html" />
+    <Content Include="Libs\echarts\test\treemap-option2.html" />
+    <Content Include="Libs\echarts\test\treemap-simple.html" />
+    <Content Include="Libs\echarts\test\ut\config.js" />
+    <Content Include="Libs\echarts\test\ut\core\uiHelper.js" />
+    <Content Include="Libs\echarts\test\ut\core\utHelper.js" />
+    <Content Include="Libs\echarts\test\ut\lib\canteen.js" />
+    <Content Include="Libs\echarts\test\ut\lib\imagediff.js" />
+    <Content Include="Libs\echarts\test\ut\lib\jasmine-2.3.4\boot.js" />
+    <Content Include="Libs\echarts\test\ut\lib\jasmine-2.3.4\console.js" />
+    <Content Include="Libs\echarts\test\ut\lib\jasmine-2.3.4\jasmine-html.js" />
+    <Content Include="Libs\echarts\test\ut\lib\jasmine-2.3.4\jasmine.css" />
+    <Content Include="Libs\echarts\test\ut\lib\jasmine-2.3.4\jasmine.js" />
+    <Content Include="Libs\echarts\test\ut\lib\jasmine-2.3.4\jasmine_favicon.png" />
+    <Content Include="Libs\echarts\test\ut\spec\component\visualMap\setOption.js" />
+    <Content Include="Libs\echarts\test\ut\spec\data\List.js" />
+    <Content Include="Libs\echarts\test\ut\spec\model\Component.js" />
+    <Content Include="Libs\echarts\test\ut\spec\model\Global.js" />
+    <Content Include="Libs\echarts\test\ut\spec\model\timelineOptions.js" />
+    <Content Include="Libs\echarts\test\ut\spec\ui\config.js" />
+    <Content Include="Libs\echarts\test\ut\spec\ui\legend.js" />
+    <Content Include="Libs\echarts\test\ut\spec\ui\title.js" />
+    <Content Include="Libs\echarts\test\ut\spec\ui\title.subtextStyle.js" />
+    <Content Include="Libs\echarts\test\ut\spec\ui\title.textStyle.js" />
+    <Content Include="Libs\echarts\test\ut\spec\util\graphic.js" />
+    <Content Include="Libs\echarts\test\ut\spec\util\model.js" />
+    <Content Include="Libs\echarts\test\ut\spec\util\number.js" />
+    <Content Include="Libs\echarts\test\ut\ui.html" />
+    <Content Include="Libs\echarts\test\ut\ut.html" />
+    <Content Include="Libs\echarts\test\ut\ut.js" />
+    <Content Include="Libs\echarts\test\visualMap-categories.html" />
+    <Content Include="Libs\echarts\test\visualMap-continuous.html" />
+    <Content Include="Libs\echarts\test\visualMap-layout.html" />
+    <Content Include="Libs\echarts\test\visualMap-opacity.html" />
+    <Content Include="Libs\echarts\test\visualMap-pieces.html" />
+    <Content Include="Libs\echarts\test\visualMap-scatter-colorAndSymbol.html" />
+    <Content Include="Libs\echarts\test\visualMap-scatter-symbolSize.html" />
+    <Content Include="Libs\echarts\test\webkit-dep.html" />
+    <Content Include="Libs\echarts\test\worldPopulationBubble.html" />
+    <Content Include="Libs\echarts\theme\dark.js" />
+    <Content Include="Libs\echarts\theme\infographic.js" />
+    <Content Include="Libs\echarts\theme\macarons.js" />
+    <Content Include="Libs\echarts\theme\roma.js" />
+    <Content Include="Libs\echarts\theme\shine.js" />
+    <Content Include="Libs\echarts\theme\tool\option\area.js" />
+    <Content Include="Libs\echarts\theme\tool\option\bar.js" />
+    <Content Include="Libs\echarts\theme\tool\option\graph.js" />
+    <Content Include="Libs\echarts\theme\tool\option\map.js" />
+    <Content Include="Libs\echarts\theme\tool\option\pie.js" />
+    <Content Include="Libs\echarts\theme\tool\option\scatter.js" />
+    <Content Include="Libs\echarts\theme\tool\thumb.js" />
+    <Content Include="Libs\echarts\theme\vintage.js" />
+    <Content Include="Libs\echarts\webpack.config.js" />
+    <Content Include="Libs\Gentelella\css\custom.css" />
+    <Content Include="Libs\Gentelella\css\custom.min.css" />
+    <Content Include="Libs\Gentelella\images\back_disabled.png" />
+    <Content Include="Libs\Gentelella\images\back_enabled.png" />
+    <Content Include="Libs\Gentelella\images\back_enabled_hover.png" />
+    <Content Include="Libs\Gentelella\images\forward_disabled.png" />
+    <Content Include="Libs\Gentelella\images\forward_enabled.png" />
+    <Content Include="Libs\Gentelella\images\forward_enabled_hover.png" />
+    <Content Include="Libs\Gentelella\images\loading.gif" />
+    <Content Include="Libs\Gentelella\js\custom.js" />
+    <Content Include="Libs\Gentelella\js\custom.min.js" />
+    <Content Include="Libs\iCheck\icheck.js" />
+    <Content Include="Libs\iCheck\icheck.min.js" />
+    <Content Include="Libs\iCheck\skins\all.css" />
+    <Content Include="Libs\iCheck\skins\flat\aero%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\aero.css" />
+    <Content Include="Libs\iCheck\skins\flat\aero.png" />
+    <Content Include="Libs\iCheck\skins\flat\blue%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\blue.css" />
+    <Content Include="Libs\iCheck\skins\flat\blue.png" />
+    <Content Include="Libs\iCheck\skins\flat\flat%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\flat.css" />
+    <Content Include="Libs\iCheck\skins\flat\flat.png" />
+    <Content Include="Libs\iCheck\skins\flat\green%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\green.css" />
+    <Content Include="Libs\iCheck\skins\flat\green.png" />
+    <Content Include="Libs\iCheck\skins\flat\grey%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\grey.css" />
+    <Content Include="Libs\iCheck\skins\flat\grey.png" />
+    <Content Include="Libs\iCheck\skins\flat\orange%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\orange.css" />
+    <Content Include="Libs\iCheck\skins\flat\orange.png" />
+    <Content Include="Libs\iCheck\skins\flat\pink%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\pink.css" />
+    <Content Include="Libs\iCheck\skins\flat\pink.png" />
+    <Content Include="Libs\iCheck\skins\flat\purple%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\purple.css" />
+    <Content Include="Libs\iCheck\skins\flat\purple.png" />
+    <Content Include="Libs\iCheck\skins\flat\red%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\red.css" />
+    <Content Include="Libs\iCheck\skins\flat\red.png" />
+    <Content Include="Libs\iCheck\skins\flat\yellow%402x.png" />
+    <Content Include="Libs\iCheck\skins\flat\yellow.css" />
+    <Content Include="Libs\iCheck\skins\flat\yellow.png" />
+    <Content Include="Libs\iCheck\skins\flat\_all.css" />
+    <Content Include="Libs\iCheck\skins\futurico\futurico%402x.png" />
+    <Content Include="Libs\iCheck\skins\futurico\futurico.css" />
+    <Content Include="Libs\iCheck\skins\futurico\futurico.png" />
+    <Content Include="Libs\iCheck\skins\line\aero.css" />
+    <Content Include="Libs\iCheck\skins\line\blue.css" />
+    <Content Include="Libs\iCheck\skins\line\green.css" />
+    <Content Include="Libs\iCheck\skins\line\grey.css" />
+    <Content Include="Libs\iCheck\skins\line\line%402x.png" />
+    <Content Include="Libs\iCheck\skins\line\line.css" />
+    <Content Include="Libs\iCheck\skins\line\line.png" />
+    <Content Include="Libs\iCheck\skins\line\orange.css" />
+    <Content Include="Libs\iCheck\skins\line\pink.css" />
+    <Content Include="Libs\iCheck\skins\line\purple.css" />
+    <Content Include="Libs\iCheck\skins\line\red.css" />
+    <Content Include="Libs\iCheck\skins\line\yellow.css" />
+    <Content Include="Libs\iCheck\skins\line\_all.css" />
+    <Content Include="Libs\iCheck\skins\minimal\aero%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\aero.css" />
+    <Content Include="Libs\iCheck\skins\minimal\aero.png" />
+    <Content Include="Libs\iCheck\skins\minimal\blue%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\blue.css" />
+    <Content Include="Libs\iCheck\skins\minimal\blue.png" />
+    <Content Include="Libs\iCheck\skins\minimal\green%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\green.css" />
+    <Content Include="Libs\iCheck\skins\minimal\green.png" />
+    <Content Include="Libs\iCheck\skins\minimal\grey%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\grey.css" />
+    <Content Include="Libs\iCheck\skins\minimal\grey.png" />
+    <Content Include="Libs\iCheck\skins\minimal\minimal%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\minimal.css" />
+    <Content Include="Libs\iCheck\skins\minimal\minimal.png" />
+    <Content Include="Libs\iCheck\skins\minimal\orange%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\orange.css" />
+    <Content Include="Libs\iCheck\skins\minimal\orange.png" />
+    <Content Include="Libs\iCheck\skins\minimal\pink%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\pink.css" />
+    <Content Include="Libs\iCheck\skins\minimal\pink.png" />
+    <Content Include="Libs\iCheck\skins\minimal\purple%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\purple.css" />
+    <Content Include="Libs\iCheck\skins\minimal\purple.png" />
+    <Content Include="Libs\iCheck\skins\minimal\red%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\red.css" />
+    <Content Include="Libs\iCheck\skins\minimal\red.png" />
+    <Content Include="Libs\iCheck\skins\minimal\yellow%402x.png" />
+    <Content Include="Libs\iCheck\skins\minimal\yellow.css" />
+    <Content Include="Libs\iCheck\skins\minimal\yellow.png" />
+    <Content Include="Libs\iCheck\skins\minimal\_all.css" />
+    <Content Include="Libs\iCheck\skins\polaris\polaris%402x.png" />
+    <Content Include="Libs\iCheck\skins\polaris\polaris.css" />
+    <Content Include="Libs\iCheck\skins\polaris\polaris.png" />
+    <Content Include="Libs\iCheck\skins\square\aero%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\aero.css" />
+    <Content Include="Libs\iCheck\skins\square\aero.png" />
+    <Content Include="Libs\iCheck\skins\square\blue%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\blue.css" />
+    <Content Include="Libs\iCheck\skins\square\blue.png" />
+    <Content Include="Libs\iCheck\skins\square\green%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\green.css" />
+    <Content Include="Libs\iCheck\skins\square\green.png" />
+    <Content Include="Libs\iCheck\skins\square\grey%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\grey.css" />
+    <Content Include="Libs\iCheck\skins\square\grey.png" />
+    <Content Include="Libs\iCheck\skins\square\orange%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\orange.css" />
+    <Content Include="Libs\iCheck\skins\square\orange.png" />
+    <Content Include="Libs\iCheck\skins\square\pink%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\pink.css" />
+    <Content Include="Libs\iCheck\skins\square\pink.png" />
+    <Content Include="Libs\iCheck\skins\square\purple%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\purple.css" />
+    <Content Include="Libs\iCheck\skins\square\purple.png" />
+    <Content Include="Libs\iCheck\skins\square\red%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\red.css" />
+    <Content Include="Libs\iCheck\skins\square\red.png" />
+    <Content Include="Libs\iCheck\skins\square\square%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\square.css" />
+    <Content Include="Libs\iCheck\skins\square\square.png" />
+    <Content Include="Libs\iCheck\skins\square\yellow%402x.png" />
+    <Content Include="Libs\iCheck\skins\square\yellow.css" />
+    <Content Include="Libs\iCheck\skins\square\yellow.png" />
+    <Content Include="Libs\iCheck\skins\square\_all.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include=".bower.json" />
+    <Content Include="bower.json" />
+    <Content Include="icheck.jquery.json" />
+    <Content Include="Libs\animate.css\.bower.json" />
+    <Content Include="Libs\animate.css\animate-config.json" />
+    <Content Include="Libs\animate.css\bower.json" />
+    <Content Include="Libs\animate.css\package.json" />
+    <Content Include="Libs\bootstrap-progressbar\.bower.json" />
+    <Content Include="Libs\bootstrap-progressbar\bower.json" />
+    <Content Include="Libs\bootstrap-progressbar\CHANGELOG.md" />
+    <Content Include="Libs\bootstrap-progressbar\CONTRIBUTORS.md" />
+    <Content Include="Libs\bootstrap-progressbar\less\bootstrap-progressbar-2.x.x.less" />
+    <Content Include="Libs\bootstrap-progressbar\less\bootstrap-progressbar-3.0.0-3.1.x.less" />
+    <Content Include="Libs\bootstrap-progressbar\less\bootstrap-progressbar-3.2.0.less" />
+    <Content Include="Libs\bootstrap-progressbar\less\bootstrap-progressbar-3.3.0-3.x.x.less" />
+    <Content Include="Libs\bootstrap-progressbar\LICENSE" />
+    <Content Include="Libs\bootstrap-progressbar\package.json" />
+    <Content Include="Libs\bootstrap-progressbar\README.md" />
+    <Content Include="Libs\bootstrap-progressbar\scss\bootstrap-progressbar-2.x.x.scss" />
+    <Content Include="Libs\bootstrap-progressbar\scss\bootstrap-progressbar-3.0.0-3.1.x.scss" />
+    <Content Include="Libs\bootstrap-progressbar\scss\bootstrap-progressbar-3.2.0.scss" />
+    <Content Include="Libs\bootstrap-progressbar\scss\bootstrap-progressbar-3.3.0-3.x.x.scss" />
+    <Content Include="Libs\bootstrap-toggle-master\.gitignore" />
+    <Content Include="Libs\bootstrap-toggle-master\bower.json" />
+    <Content Include="Libs\bootstrap-toggle-master\js\bootstrap-toggle.min.js.map" />
+    <Content Include="Libs\bootstrap-toggle-master\js\bootstrap2-toggle.min.js.map" />
+    <Content Include="Libs\bootstrap-toggle-master\LICENSE" />
+    <Content Include="Libs\bootstrap-toggle-master\package.json" />
+    <Content Include="Libs\bootstrap-toggle-master\README.md" />
+    <Content Include="Libs\Chart.js\.bower.json" />
+    <Content Include="Libs\Chart.js\.codeclimate.yml" />
+    <Content Include="Libs\Chart.js\.editorconfig" />
+    <Content Include="Libs\Chart.js\.eslintignore" />
+    <Content Include="Libs\Chart.js\.eslintrc" />
+    <Content Include="Libs\Chart.js\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="Libs\Chart.js\.github\PULL_REQUEST_TEMPLATE.md" />
+    <Content Include="Libs\Chart.js\.gitignore" />
+    <Content Include="Libs\Chart.js\.travis.yml" />
+    <Content Include="Libs\Chart.js\bower.json" />
+    <Content Include="Libs\Chart.js\composer.json" />
+    <Content Include="Libs\Chart.js\config.jshintrc" />
+    <Content Include="Libs\Chart.js\CONTRIBUTING.md" />
+    <Content Include="Libs\Chart.js\docs\00-Getting-Started.md" />
+    <Content Include="Libs\Chart.js\docs\01-Chart-Configuration.md" />
+    <Content Include="Libs\Chart.js\docs\02-Scales.md" />
+    <Content Include="Libs\Chart.js\docs\03-Line-Chart.md" />
+    <Content Include="Libs\Chart.js\docs\04-Bar-Chart.md" />
+    <Content Include="Libs\Chart.js\docs\05-Radar-Chart.md" />
+    <Content Include="Libs\Chart.js\docs\06-Polar-Area-Chart.md" />
+    <Content Include="Libs\Chart.js\docs\07-Pie-Doughnut-Chart.md" />
+    <Content Include="Libs\Chart.js\docs\08-Bubble-Chart.md" />
+    <Content Include="Libs\Chart.js\docs\09-Advanced.md" />
+    <Content Include="Libs\Chart.js\docs\10-Notes.md" />
+    <Content Include="Libs\Chart.js\LICENSE.md" />
+    <Content Include="Libs\Chart.js\package.json" />
+    <Content Include="Libs\Chart.js\README.md" />
+    <Content Include="Libs\datatables.net-bs\.bower.json" />
+    <Content Include="Libs\datatables.net-bs\bower.json" />
+    <Content Include="Libs\datatables.net-bs\Readme.md" />
+    <Content Include="Libs\datatables.net-buttons-bs\.bower.json" />
+    <Content Include="Libs\datatables.net-buttons-bs\bower.json" />
+    <Content Include="Libs\datatables.net-buttons-bs\Readme.md" />
+    <Content Include="Libs\datatables.net-buttons\.bower.json" />
+    <Content Include="Libs\datatables.net-buttons\bower.json" />
+    <Content Include="Libs\datatables.net-buttons\Readme.md" />
+    <Content Include="Libs\datatables.net\.bower.json" />
+    <Content Include="Libs\datatables.net\bower.json" />
+    <Content Include="Libs\datatables.net\Readme.md" />
+    <Content Include="Libs\echarts\.bower.json" />
+    <Content Include="Libs\echarts\.editorconfig" />
+    <Content Include="Libs\echarts\.github\CONTRIBUTING.md" />
+    <Content Include="Libs\echarts\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="Libs\echarts\.gitignore" />
+    <Content Include="Libs\echarts\.jshintrc" />
+    <Content Include="Libs\echarts\.npmignore" />
+    <Content Include="Libs\echarts\build\build.sh" />
+    <Content Include="Libs\echarts\LICENSE" />
+    <Content Include="Libs\echarts\map\json\china-contour.json" />
+    <Content Include="Libs\echarts\map\json\china.json" />
+    <Content Include="Libs\echarts\map\json\province\anhui.json" />
+    <Content Include="Libs\echarts\map\json\province\aomen.json" />
+    <Content Include="Libs\echarts\map\json\province\beijing.json" />
+    <Content Include="Libs\echarts\map\json\province\chongqing.json" />
+    <Content Include="Libs\echarts\map\json\province\fujian.json" />
+    <Content Include="Libs\echarts\map\json\province\gansu.json" />
+    <Content Include="Libs\echarts\map\json\province\guangdong.json" />
+    <Content Include="Libs\echarts\map\json\province\guangxi.json" />
+    <Content Include="Libs\echarts\map\json\province\guizhou.json" />
+    <Content Include="Libs\echarts\map\json\province\hainan.json" />
+    <Content Include="Libs\echarts\map\json\province\hebei.json" />
+    <Content Include="Libs\echarts\map\json\province\heilongjiang.json" />
+    <Content Include="Libs\echarts\map\json\province\henan.json" />
+    <Content Include="Libs\echarts\map\json\province\hubei.json" />
+    <Content Include="Libs\echarts\map\json\province\hunan.json" />
+    <Content Include="Libs\echarts\map\json\province\jiangsu.json" />
+    <Content Include="Libs\echarts\map\json\province\jiangxi.json" />
+    <Content Include="Libs\echarts\map\json\province\jilin.json" />
+    <Content Include="Libs\echarts\map\json\province\liaoning.json" />
+    <Content Include="Libs\echarts\map\json\province\neimenggu.json" />
+    <Content Include="Libs\echarts\map\json\province\ningxia.json" />
+    <Content Include="Libs\echarts\map\json\province\qinghai.json" />
+    <Content Include="Libs\echarts\map\json\province\shandong.json" />
+    <Content Include="Libs\echarts\map\json\province\shanghai.json" />
+    <Content Include="Libs\echarts\map\json\province\shanxi.json" />
+    <Content Include="Libs\echarts\map\json\province\shanxi1.json" />
+    <Content Include="Libs\echarts\map\json\province\sichuan.json" />
+    <Content Include="Libs\echarts\map\json\province\tianjin.json" />
+    <Content Include="Libs\echarts\map\json\province\xianggang.json" />
+    <Content Include="Libs\echarts\map\json\province\xinjiang.json" />
+    <Content Include="Libs\echarts\map\json\province\xizang.json" />
+    <Content Include="Libs\echarts\map\json\province\yunnan.json" />
+    <Content Include="Libs\echarts\map\json\province\zhejiang.json" />
+    <Content Include="Libs\echarts\map\json\world.json" />
+    <Content Include="Libs\echarts\package.json" />
+    <Content Include="Libs\echarts\README.md" />
+    <Content Include="Libs\echarts\test\data\energy.json" />
+    <Content Include="Libs\echarts\test\data\les-miserables.gexf" />
+    <Content Include="Libs\echarts\test\data\masterPainterColorChoice.json" />
+    <Content Include="Libs\echarts\test\data\option-view.json" />
+    <Content Include="Libs\echarts\test\data\option-view2.json" />
+    <Content Include="Libs\echarts\test\data\product.json" />
+    <Content Include="Libs\echarts\test\README.md" />
+    <Content Include="Libs\echarts\test\ut\.jshintrc" />
+    <Content Include="Libs\echarts\test\ut\configure" />
+    <Content Include="Libs\echarts\test\ut\MIT.LICENSE" />
+    <Content Include="Libs\iCheck\.bower.json" />
+    <Content Include="Libs\iCheck\bower.json" />
+    <Content Include="Libs\iCheck\icheck.jquery.json" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutTest.cshtml" />
+    <Content Include="Views\Home\ViewTest1.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60497</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60497/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

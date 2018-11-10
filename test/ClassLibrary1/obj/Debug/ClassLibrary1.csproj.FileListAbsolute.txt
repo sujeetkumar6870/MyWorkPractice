@@ -1,0 +1,12 @@
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\kumasuje\source\repos\test\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

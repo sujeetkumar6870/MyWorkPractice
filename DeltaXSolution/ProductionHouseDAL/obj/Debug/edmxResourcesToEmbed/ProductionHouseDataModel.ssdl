@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductionHouseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ActorEntity">
+    <Key>
+      <PropertyRef Name="Actor_Id" />
+    </Key>
+    <Property Name="Actor_Id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Actor_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Actor_Sex" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Actor_DOB" Type="date" Nullable="false" />
+    <Property Name="Actor_Bio" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MovieActorEntity">
+    <Key>
+      <PropertyRef Name="Actor_Id" />
+      <PropertyRef Name="Movie_Id" />
+    </Key>
+    <Property Name="Actor_Id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Movie_Id" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MovieEntity">
+    <Key>
+      <PropertyRef Name="Movie_Id" />
+    </Key>
+    <Property Name="Movie_Id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Producer_Id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Movie_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Movie_Year" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="Movie_Plot" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Movie_Poster" Type="image" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProducerEntity">
+    <Key>
+      <PropertyRef Name="Producer_Id" />
+    </Key>
+    <Property Name="Producer_Id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Producer_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Producer_Sex" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Producer_DOB" Type="date" Nullable="false" />
+    <Property Name="Producer_Bio" Type="varchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <Association Name="fk_aid">
+    <End Role="ActorEntity" Type="Self.ActorEntity" Multiplicity="1" />
+    <End Role="MovieActorEntity" Type="Self.MovieActorEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActorEntity">
+        <PropertyRef Name="Actor_Id" />
+      </Principal>
+      <Dependent Role="MovieActorEntity">
+        <PropertyRef Name="Actor_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_mid">
+    <End Role="MovieEntity" Type="Self.MovieEntity" Multiplicity="1" />
+    <End Role="MovieActorEntity" Type="Self.MovieActorEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MovieEntity">
+        <PropertyRef Name="Movie_Id" />
+      </Principal>
+      <Dependent Role="MovieActorEntity">
+        <PropertyRef Name="Movie_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_mpid">
+    <End Role="ProducerEntity" Type="Self.ProducerEntity" Multiplicity="1" />
+    <End Role="MovieEntity" Type="Self.MovieEntity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProducerEntity">
+        <PropertyRef Name="Producer_Id" />
+      </Principal>
+      <Dependent Role="MovieEntity">
+        <PropertyRef Name="Producer_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProductionHouseModelStoreContainer">
+    <EntitySet Name="ActorEntity" EntityType="Self.ActorEntity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MovieActorEntity" EntityType="Self.MovieActorEntity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MovieEntity" EntityType="Self.MovieEntity" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProducerEntity" EntityType="Self.ProducerEntity" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_aid" Association="Self.fk_aid">
+      <End Role="ActorEntity" EntitySet="ActorEntity" />
+      <End Role="MovieActorEntity" EntitySet="MovieActorEntity" />
+    </AssociationSet>
+    <AssociationSet Name="fk_mid" Association="Self.fk_mid">
+      <End Role="MovieEntity" EntitySet="MovieEntity" />
+      <End Role="MovieActorEntity" EntitySet="MovieActorEntity" />
+    </AssociationSet>
+    <AssociationSet Name="fk_mpid" Association="Self.fk_mpid">
+      <End Role="ProducerEntity" EntitySet="ProducerEntity" />
+      <End Role="MovieEntity" EntitySet="MovieEntity" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProductionHouseModelStoreContainer" CdmEntityContainer="ProductionHouseEntities">
+    <EntitySetMapping Name="ActorEntities">
+      <EntityTypeMapping TypeName="ProductionHouseModel.ActorEntity">
+        <MappingFragment StoreEntitySet="ActorEntity">
+          <ScalarProperty Name="Actor_Id" ColumnName="Actor_Id" />
+          <ScalarProperty Name="Actor_Name" ColumnName="Actor_Name" />
+          <ScalarProperty Name="Actor_Sex" ColumnName="Actor_Sex" />
+          <ScalarProperty Name="Actor_DOB" ColumnName="Actor_DOB" />
+          <ScalarProperty Name="Actor_Bio" ColumnName="Actor_Bio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieEntities">
+      <EntityTypeMapping TypeName="ProductionHouseModel.MovieEntity">
+        <MappingFragment StoreEntitySet="MovieEntity">
+          <ScalarProperty Name="Movie_Id" ColumnName="Movie_Id" />
+          <ScalarProperty Name="Producer_Id" ColumnName="Producer_Id" />
+          <ScalarProperty Name="Movie_Name" ColumnName="Movie_Name" />
+          <ScalarProperty Name="Movie_Year" ColumnName="Movie_Year" />
+          <ScalarProperty Name="Movie_Plot" ColumnName="Movie_Plot" />
+          <ScalarProperty Name="Movie_Poster" ColumnName="Movie_Poster" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProducerEntities">
+      <EntityTypeMapping TypeName="ProductionHouseModel.ProducerEntity">
+        <MappingFragment StoreEntitySet="ProducerEntity">
+          <ScalarProperty Name="Producer_Id" ColumnName="Producer_Id" />
+          <ScalarProperty Name="Producer_Name" ColumnName="Producer_Name" />
+          <ScalarProperty Name="Producer_Sex" ColumnName="Producer_Sex" />
+          <ScalarProperty Name="Producer_DOB" ColumnName="Producer_DOB" />
+          <ScalarProperty Name="Producer_Bio" ColumnName="Producer_Bio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MovieActorEntity" TypeName="ProductionHouseModel.MovieActorEntity" StoreEntitySet="MovieActorEntity">
+      <EndProperty Name="ActorEntity">
+        <ScalarProperty Name="Actor_Id" ColumnName="Actor_Id" />
+      </EndProperty>
+      <EndProperty Name="MovieEntity">
+        <ScalarProperty Name="Movie_Id" ColumnName="Movie_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
